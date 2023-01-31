@@ -71,6 +71,12 @@ export class UserService {
     return user;
   }
 
+  // 删除用户
+  async deleteUser(id: string): Promise<IUser> {
+    const user: IUser = await this.userRepository.findOne({ id });
+    return await this.userRepository.remove(user);
+  }
+
   // 注销登录
   async logout(user: Partial<User>) {
     const redis = new RedisInstance(0);

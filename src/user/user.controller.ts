@@ -54,6 +54,14 @@ export class UserController {
     return user;
   }
 
+  @Delete('deleteUser')
+  @ApiOperation({ summary: '删除用户' })
+  @ApiBearerAuth()
+  @UseGuards(AuthGuard('jwt'))
+  async deleteUser(@Query('id') id: string) {
+    return await this.userService.deleteUser(id);
+  }
+
   @Post('updatePass')
   @ApiOperation({ summary: '修改用户密码' })
   @ApiBearerAuth()
