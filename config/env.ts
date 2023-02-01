@@ -4,7 +4,7 @@ export default {
   // 数据库配置
   DATABASE_CONFIG: {
     type: 'mysql',
-    host: '47.108.210.87', // 主机，默认为localhost
+    host: 'localhost', // 主机，默认为localhost
     port: 3306, // 端口号
     username: 'root', // 用户名
     password: '123456', // 密码
