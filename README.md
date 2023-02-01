@@ -80,7 +80,7 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 ## swagger
-启动项目之后，swagger访问地址：http://localhost:9080/docs
+启动项目之后，swagger访问地址：http://localhost:3000/docs
 
 ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/47865f5d6ae84d42bc225eef6ce8bc60~tplv-k3u1fbpfcp-watermark.image?)
 
